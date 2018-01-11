@@ -6,5 +6,6 @@ FROM codehz/mcpe-server
 COPY --from=unzip /data /data
 COPY init.sh /root
 WORKDIR /root/app
-ENTRYPOINT ["/bin/bash", "-c", "/root/init.sh"]
-
+VOLUME ["/root/app"]
+EXPOSE 19132
+CMD /root/init.sh
