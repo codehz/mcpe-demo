@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 cd /root/app
 if [ ! -f /root/app/server ]; then
   cp -r /data/assets/* .
