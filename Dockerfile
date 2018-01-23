@@ -10,6 +10,6 @@ COPY --from=server /* /root/
 COPY init.sh /root
 RUN mkdir /lib && cp /root/*.so* /lib
 WORKDIR /root/app
-VOLUME ["/root/app"]
+VOLUME ["/root/app/games"]
 EXPOSE 19132:19132/udp
 CMD /root/init.sh
